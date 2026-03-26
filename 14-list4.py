@@ -77,4 +77,11 @@ print(new_pairs)
 # x="b"   y=1,2,3
 # x="c"   y=1,2,3
 
+#           0     1     2
+#         1  2  0 1   0 1
+listA = [[1,2],[3,4],[5,6]]
+print(listA[1])
+print(listA[0][0])
+print(listA[2][0])
+
 
