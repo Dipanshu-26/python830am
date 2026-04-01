@@ -86,3 +86,55 @@ print("--------------------------------")
 for x in range(len(listA)):
   if listA[x]%2!=0:
     print(listA[x])
+
+#  list ==array
+#         0  1  2  3
+listA = [10,20,30,40]    #4
+print(listA)
+
+print(listA[0])
+print(listA[1])
+print(listA[2])
+print(listA[3])
+
+#while ==>list
+# inilization
+# while(condition )
+# inc/dec
+
+print("----------------------------")
+#         0  1  2  3  4  5  6  7
+listA = [10,20,30,40,50,60,70,80]  #length=8
+i=0     # inilization
+while i<8 :      #condition  #i=0,1,2.....7
+  #print(i)        #0 ,1
+  print(listA[i])   #listA[0],listA[1]........listA[7]
+  i=i+1           #1,2.......7,8
+
+print(len(listA))
+
+
+print("----------------------------")
+
+
+x=0
+while x < len(listA):     #while x<8  
+  print(listA[x])
+  x=x+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
