@@ -118,15 +118,102 @@ print("-----------------------------")
 
 #print 0 to 10
 
-for x in range(11):     #x=0,1 ,2 ,3....10  ,11       (x <endIndex(11))
+for x in range(11):     #x=0,1 ,2 ,3....10  ,11       (x < endIndex(11))
     print(x)
 
+#print 1 to 10
+for x in range(1,11):
+    print(x)
+
+print("---------------------------")
+#print table of 2
+
+for a in range(2,21,2):
+    print(a)
+
+print("---------------------------")
+#print 0 to 10 in reve
+for a in range(10,-1,-1):
+    print(a)
+
+#print 1 to 10 in reve
+for a in range(10,0,-1):
+    print(a)
+
+print("---------------------------")
+#table of 2 in reverse
+for a in range(20,1,-2):
+    print(a)
 
 
+print("---------------------------")
+#break and continue
+
+#break -- exit from loop
+
+#print 1 to 10 7 -- exit
+
+for x in range(1,11):
+    print(x)
+    if x==7:
+        break
+    #print(x)
+
+#continue
+#print 1 to 10 -- 7 skip
+
+for x in range(1,11):
+    if x==7:
+        continue
+    print(x)
+
+#------------------------------------------------------------------------
+# while
+#inilization
+#while condition  
+#inc/dec  
+# 
+# print 0 to 10
+
+i=0          #inilization
+while i<=10:     #while condition 
+    print(i)
+    i=i+1
+
+#print table of 2
+
+x=2
+while x<=20:
+    print(x)
+    x=x+2 
+
+print("---------------------------")
+#break, continue      
+#print 1 to 10 7 exit
+
+i=1
+while i<=10:
+    if i==7:
+        break
+    print(i)
+    i=i+1
+
+#continue    
+#print 1 to 10 7 skip
+x=1
+# while x<=10:            #x=1,2,3.....7,7,7,7
+#     if x==7:            #x=7
+#         continue
+#     print(x)           #x=1,2,3
+#     x=x+1               #x=2,3,4
 
 
-
-
-
-
-
+#print 1 to 10 7 skip
+x=1
+while x<=10:            #x=1,2,3.....7,8,9,10
+    if x==7:            #x=7
+        x=x+1           #x=8
+        continue
+    print(x)           #x=1,2,3.....8,9,10
+    x=x+1               #x=2,3,4,9,10,11
+    
