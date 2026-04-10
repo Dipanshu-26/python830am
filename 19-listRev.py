@@ -55,3 +55,49 @@ print(new_listB)
 print(listB)
 
 print("----------------------------")
+#count
+listB = ['dip','adi','tanish','deep','adi','deep','akay','zeshan','karan','deep','adi']
+q1 = listB.count('deep')
+print(q1)
+
+q1 = listB.count('tanish')
+print(q1)
+
+q1 = listB.count('tanishhh')
+print(q1)
+
+print("----------------------------")
+
+num1 = [1,2,3,4,5]
+num2= num1 
+
+print(num1)
+print(num2)
+
+num2[2] ='dip' 
+
+print(num1)
+print(num2)
+
+num1[4] = 111
+
+print(num1)
+print(num2)
+
+#copy
+num1 = [1,2,3,4,5,6]
+
+num2 = num1.copy()
+
+print(num1)
+print(num2)
+
+num2[2] ='dip' 
+
+print(num1)
+print(num2)
+
+num1[4] = 111
+
+print(num1)
+print(num2)
