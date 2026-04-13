@@ -101,3 +101,36 @@ num1[4] = 111
 
 print(num1)
 print(num2)
+
+#------------------------------------------------------
+
+listA = [11,22,33,44]
+listB = listA
+
+print(listA)
+print(listB)
+
+listB[2] = "dip"
+
+print(listA)
+print(listB)
+
+listA[1] = "0000"
+
+print(listA)
+print(listB)
+
+#-----------------------------------------
+listC = [1,2,3,4,5]
+listD = listC.copy()
+
+print(listC)
+print(listD)
+
+listD[2] = "dip"
+print(listC)
+print(listD)
+
+listC[2] = "aaa"
+print(listC)
+print(listD)
