@@ -126,4 +126,43 @@ retval2 = student.popitem()
 print(student)
 print(retval2)
 
-#clear pop
+#clear  : removes all the keys
+student = {
+    "name" : "tanish",
+    "surname"  : "chawde",
+    "age" :16,
+    "class" : 12
+} 
+
+print(student)
+student.clear()
+print(student)
+
+#pop(k:v) : delets if exists(safe delets)
+
+student = {
+    "name" : "tanish",
+    "surname"  : "chawde",
+    "age" :16,
+    "class" : 12
+} 
+
+student.pop("age")
+print(student)
+
+student.pop("age",None)
+print(student)
+
+#popitem()- remove last inserted key-value pair
+student = {
+    "name" : "tanish",
+    "surname"  : "chawde",
+    "age" :16,
+    "class" : 12
+}
+print(student)
+student.popitem()
+print(student)
+
+student.popitem()
+print(student)
