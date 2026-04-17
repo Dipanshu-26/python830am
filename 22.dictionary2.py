@@ -68,7 +68,7 @@ print(info)
 
 info.setdefault("batch" , "2029")
 print(info)
-
+print("-----------------------------------------")
 info = {
     "name" : "Virat",
     "surname" : "koholi",

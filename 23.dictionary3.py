@@ -109,4 +109,20 @@ defaults = {
 for key, value in defaults.items():
     info.setdefault(key, value)
 
-print(info)    
+print(info)   
+
+#--------------------------------------------------------------
+info = {
+    "class" : "10th",
+    "course" : "cbsc",
+    "branch" : "pune",
+    "gradeA" : ["amar"]
+}
+
+info.setdefault("gradeA",[]).append("ram")
+print(info)
+info.setdefault("gradeA",[]).append("sham")
+print(info)
+
+
+
