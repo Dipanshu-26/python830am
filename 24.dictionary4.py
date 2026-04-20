@@ -23,3 +23,23 @@ print(dict1)
 key = ["abc"]
 dict2=dict.fromkeys(key,0)
 print(dict2)
+
+#--------------------------------------------------------------
+# Important Warning - If you use a mutable value like a list, all keys share the SAME list.
+# Why - Because the same list is used for both keys.
+d= dict.fromkeys(["a","b"],[])
+print(d)
+
+d["a"].append("dip")
+print(d)
+
+d["b"].append(111)
+print(d)
+
+d["a"] = 222
+print(d)
+
+d["b"] = "dipanshu"
+print(d)
+
+
