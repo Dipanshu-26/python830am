@@ -42,6 +42,6 @@ print(type(keys))
 
 i=0
 while i<len(keys):             #i=0,1,2,3
-    k=keys[i]
+    k=keys[i]                  #['name', 'age', 'location', 'skills']
     print(f"{k} : {info[k]}")
     i=i+1
