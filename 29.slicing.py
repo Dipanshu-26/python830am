@@ -21,6 +21,7 @@ print(city[1::2])
 
 print(city[::-2])
 print(city[1::-2])
-print(city[::-2])
+print(city[::-2])   #rprnh
 print(city[8::-2])
 
+print(city[::3])
