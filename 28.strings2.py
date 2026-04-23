@@ -130,11 +130,33 @@ print(q3)
 
 
 # swapcase()
+print("TANISH".swapcase())
+print("dipanshu".swapcase())
+print("DIPansHu".swapcase())
+
 
 #title()
+txt = "i love Python programming... python is very easy to go language...."
+print(txt.title())
+print(txt.capitalize())
 
 # zfill
+txt1="42"
+txt2="788"
+print(txt1.zfill(5))
+print(txt2.zfill(5))
+
 
 # partition()
+txt3="dipanshu_chawde@gmail.com"
+x=txt3.partition("@")
+print(x)
+print(type(x))
+x=txt3.partition("@gmail")
+print(x)
+print(type(x))
 
 #reverse string
+name = "dipanshu"
+rev = name[::-1]
+print(rev)
