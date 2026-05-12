@@ -1,0 +1,8 @@
+Name : Dipanshu 
+COurse : GenAI 
+Python Module : oops concepts 
+
+this is content of append mode 
+Name : Mohan 
+COurse : Data Analyst 
+Python Module : FIle handeling 
