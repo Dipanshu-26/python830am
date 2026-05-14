@@ -111,3 +111,17 @@ gen = get_numbers3()
 print(max(gen))
 
 print('---------------------------------------------')
+
+# def get_numbers3():
+#     yield 1
+#     yield 2
+#     yield 3
+#     yield 4
+
+gen = get_numbers3()
+print(next(gen))
+print(next(gen))
+
+gen.close()
+gen1 = get_numbers3()
+print(next(gen1))
