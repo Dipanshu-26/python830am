@@ -116,37 +116,82 @@
 # multiple inheritance
 #son ==> mother, father
 
+#parent 1 class
+class Mother:
+    def __init__(self, fn,ln):
+        self.mfname = fn
+        self.lname = ln
 
-# class Mother:
-#     def __init__(self, fn,ln):
-#         self.mfname = fn
-#         self.lname = ln
+    def displayMName(self):
+        print(f"Mother name = {self.mfname} {self.lname}")   
 
-#     def displayMName(self):
-#         print(f"Mother name = {self.mfname} {self.lname}")     
+#parent 2 class
+class Father:
+    def __init__(self,fn,ln):
+        self.ffname = fn
+        self.lname = ln
 
-# class Father:
-#     def __init__(self,fn,ln):
-#         self.ffname = fn
-#         self.lname = ln
+    def displayFName(self):
+        print(f"Father name = {self.ffname} {self.lname}")   
 
-#     def displayFName(self):
-#         print(f"Father name = {self.ffname} {self.lname}")   
-
-# class Son(Father,Mother):
-#     def __init__(self, fn,ln,mfn,sfn):
-#         Father.__init__(fn,ln)
-#         Mother.__init__(mfn,ln)
-#         self.sfname = sfn
+#son class inheriting mother and father
+class Son(Father,Mother):
+    def __init__(self, fn,ln,mfn,sfn):
+        Father.__init__(self,fn,ln)
+        Mother.__init__(self,mfn,ln)
+        self.sfname = sfn
         
-#     def displaySName(self):
-#         print(f"Son name = {self.sfname} {self.lname}")  
+    def displaySName(self):
+        print(f"Son name = {self.sfname} {self.lname}")  
 
 
-# s=Son("niranjan","masalkar","dipti","aditya")
-# s.displaySName()
-# s.displayFName()
-# #s.displayMName()
+s=Son("niranjan","masalkar","dipti","aditya")
+s.displaySName()
+s.displayFName()
+s.displayMName()
+#---------------------------------------------------------------------------------------
+print("------------------------------------")
+
+class Motherr :
+    def display(self):
+        print("mother")
+
+    def cook(self):
+        print("cooking")
+
+class Fatherr :
+    def display(self):
+        print("father")
+
+    def drive(self):
+        print("driving")
+                    
+# class Son(Fatherr,Motherr) :
+#     pass
+        
+class Son(Motherr,Fatherr) :
+    pass
+
+s1=Son()
+s1.display()
+s1.cook()
+s1.drive()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
